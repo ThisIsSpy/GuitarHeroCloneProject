@@ -1,4 +1,5 @@
 ﻿using NoteSystem;
+using StarPowerSystem;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,6 +12,7 @@ namespace ScoreSystem
         [SerializeField] private TextMeshProUGUI scoreUI;
         [SerializeField] private TextMeshProUGUI scoreMultUI;
         [SerializeField] private NoteSettingsSO noteSettingsSO;
+        [HideInInspector] public bool AllowToGoBeyondMaxCap;
 
         private int score;
         private int scoreMult;
@@ -24,7 +26,7 @@ namespace ScoreSystem
         public int Score { get { return score; } 
             set 
             {
-                //if (score == value) return;
+                if (score == value) return;
                 score = Mathf.Clamp(value, 0, 9999999);
                 scoreUI.text = score.ToString();
             }
@@ -32,8 +34,9 @@ namespace ScoreSystem
         public int ScoreMult { get { return scoreMult; }
             set 
             {
-                //if (scoreMult == value) return;
+                if (scoreMult == value) return;
                 scoreMult = Mathf.Clamp(value, 1, noteSettingsSO.MaxMult);
+                if (AllowToGoBeyondMaxCap) scoreMult *= 2;
                 scoreMultUI.text = $"{scoreMult}x";
             }
         }

@@ -8,6 +8,8 @@ namespace Core
 {
     public class InputListener : MonoBehaviour
     {
+        //This class is obsolete, the project uses the new Input System
+
         [SerializeField] private NoteDestroyer[] noteSectors;
 
         void Update()

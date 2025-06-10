@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051b33f9f1f727a409695ea62ef8bb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <IsLongNote>k__BackingField: 0
+  noteLength: 0
 --- !u!61 &-4808273695241969999
 BoxCollider2D:
   m_ObjectHideFlags: 0

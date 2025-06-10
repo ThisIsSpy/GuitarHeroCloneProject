@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afda5dd0e4680a948bcd46762f980150, type: 3}
   m_Name: NoteSettingsSO
   m_EditorClassIdentifier: 
-  <NoteSpeed>k__BackingField: 10.2
+  <NoteSpeed>k__BackingField: 13.25
   <NoteCost>k__BackingField: 50
   <NotesForMultIncrease>k__BackingField: 10
   <MaxMult>k__BackingField: 4

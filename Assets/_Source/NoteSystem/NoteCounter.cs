@@ -1,4 +1,5 @@
 ﻿using ScoreSystem;
+using StarPowerSystem;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,6 +13,7 @@ namespace NoteSystem
         [SerializeField] private TextMeshProUGUI notesHitUI;
         [SerializeField] private ScoreCounter scoreCounter;
         [SerializeField] private NoteSettingsSO noteSettingsSO;
+        [SerializeField] private StarPowerCounter starPowerCounter;
 
         private int notesHit;
         private int noteStreak;
@@ -30,6 +32,11 @@ namespace NoteSystem
                 notesHitUI.text = notesHit.ToString();
                 NoteStreak++;
                 scoreCounter.Score += (noteSettingsSO.NoteCost * scoreCounter.ScoreMult);
+                if (!starPowerCounter.IsActive)
+                {
+                    if (NoteStreak > 0) starPowerCounter.StarPower += (0.5f + (NoteStreak / 10));
+                    else starPowerCounter.StarPower += 0.5f;
+                }
             } 
         }
         public int NoteStreak { get { return noteStreak; }

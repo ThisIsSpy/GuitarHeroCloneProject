@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4ae51f792039f49a251986b7125889, type: 3}
+  m_Name: SoundSO
+  m_EditorClassIdentifier: 
+  <BadNoteSFX>k__BackingField:
+  - {fileID: 8300000, guid: 53fedbf22e81dbd43bfde69f8f6af1e8, type: 3}
+  - {fileID: 8300000, guid: 331cbaea810ad014291799dc08426dd7, type: 3}
+  - {fileID: 8300000, guid: 334eee3966ca14242bb484b93ce15d20, type: 3}
+  - {fileID: 8300000, guid: e677d279dfad8d44cbce7d0a4eda5847, type: 3}
+  - {fileID: 8300000, guid: 4bca747b976784647a31da3d1a76d48a, type: 3}
+  <StarPowerReadySFX>k__BackingField: {fileID: 8300000, guid: e26bdd92a74e5dc4195e4efee71cb8c6, type: 3}
